@@ -1,6 +1,7 @@
 package main
 
 import (
+	"reflect"
 	"testing"
 
 	kvdb "github.com/kvdb/src"
@@ -39,4 +40,17 @@ func TestDel(t *testing.T) {
 	if res != true {
 		t.Errorf("Key not found!")
 	}
+}
+
+func TestCompact(t *testing.T) {
+	inpDB := map[string]string{"foo": "name", "bar": "game"}
+
+	kvdb.Set("foo", "name")
+	kvdb.Set("bar", "game")
+
+	db := kvdb.Compact()
+	if !reflect.DeepEqual(db, inpDB) {
+		t.Errorf("Mismatch in getting map view!")
+	}
+
 }
