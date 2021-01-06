@@ -2,6 +2,7 @@
 
 ### Assumptions:
 - Commands are given in uppercase ex: `SET q 10`
+- `COMPACT` cmd not yet supported yet inside `MULTI` command.
 
 ### How to run binary:
 
@@ -17,3 +18,7 @@ go build .
 ```shell
 go test -v
 ```
+
+### ToDo
+- Need to refactor code
+- Need to add test for story 4
