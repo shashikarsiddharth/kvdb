@@ -21,4 +21,4 @@ go test -v
 
 ### ToDo
 - Need to refactor code
-- Need to add test for story 4
+- Need to add test for story #3
