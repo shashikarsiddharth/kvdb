@@ -6,6 +6,8 @@
 ### How to run binary:
 
 ```shell
+mkdir kvdb
+cd kvdb
 git clone git@github.com:shashikarsiddharth/kvdb.git
 go build .
 ./kvdb
