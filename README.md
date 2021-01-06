@@ -2,7 +2,7 @@
 
 ### Assumptions:
 - Commands are given in uppercase ex: `SET q 10`
-- `COMPACT` command not yet supported inside `MULTI` command.
+- `COMPACT` command not yet supported inside `MULTI` command
 
 ### How to run binary:
 
