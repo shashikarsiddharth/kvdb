@@ -7,7 +7,7 @@
 
 ```shell
 git clone git@github.com:shashikarsiddharth/kvdb.git
-make build .
+go build .
 ./kvdb
 ```
 
